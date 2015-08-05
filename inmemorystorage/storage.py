@@ -174,6 +174,9 @@ class InMemoryStorage(Storage):
             base_url = settings.MEDIA_URL
         self.base_url = base_url
 
+    def deconstruct(self):
+        pass
+
     def listdir(self, dir):
         return self.filesystem.listdir(dir)
 
