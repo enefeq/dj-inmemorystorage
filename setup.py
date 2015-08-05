@@ -6,9 +6,9 @@ requires = ['Django >= 1.4', 'six>=1.4.1']
 tests_require = requires
 
 setup(
-    name="dj-inmemorystorage",
+    name="ambition-inmemorystorage",
     description="A non-persistent in-memory data storage backend for Django.",
-    version="1.4.0.ambition",
+    version="1.4.0",
     url="https://github.com/waveaccounting/dj-inmemorystorage",
     license=open('LICENSE').read(),
     long_description=open('README.rst').read(),
