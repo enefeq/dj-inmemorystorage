@@ -18,6 +18,7 @@ import six
 
 from django.core.files.storage import Storage
 from django.core.files.base import ContentFile
+from django.utils.deconstruct import deconstructible
 from django.utils.encoding import filepath_to_uri
 from django.utils.six.moves.urllib.parse import urljoin
 from django.utils import timezone
@@ -160,6 +161,7 @@ class InMemoryDir(InMemoryNode):
 _filesystem = InMemoryDir()
 
 
+@deconstructible
 class InMemoryStorage(Storage):
     """
     Django storage class for in-memory filesystem.
