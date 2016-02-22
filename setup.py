@@ -8,7 +8,7 @@ tests_require = requires
 setup(
     name="ambition-inmemorystorage",
     description="A non-persistent in-memory data storage backend for Django.",
-    version="1.4.0",
+    version="1.4.1",
     url="https://github.com/waveaccounting/dj-inmemorystorage",
     license=open('LICENSE').read(),
     long_description=open('README.rst').read(),
