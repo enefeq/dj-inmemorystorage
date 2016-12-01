@@ -8,10 +8,10 @@ tests_require = requires
 setup(
     name="ambition-inmemorystorage",
     description="A non-persistent in-memory data storage backend for Django.",
-    version="1.4.0",
+    version="1.4.1",
     url="https://github.com/waveaccounting/dj-inmemorystorage",
-    license=open('LICENSE').read(),
-    long_description=open('README.rst').read(),
+    license=open('LICENSE', encoding='utf-8').read(),
+    long_description=open('README.rst', encoding='utf-8').read(),
     author='Cody Soyland, Seán Hayes, Tore Birkeland, Nick Presta',
     author_email='opensource@waveapps.com',
     packages=[
@@ -28,13 +28,9 @@ setup(
         'License :: OSI Approved :: BSD License',
         'Operating System :: OS Independent',
         'Programming Language :: Python',
-        'Programming Language :: Python :: 2',
-        'Programming Language :: Python :: 2.6',
         'Programming Language :: Python :: 2.7',
-        'Programming Language :: Python :: 3',
-        'Programming Language :: Python :: 3.2',
-        'Programming Language :: Python :: 3.3',
-        'Programming Language :: Python :: 3.4',
+        'Programming Language :: Python :: 3.5',
         'Topic :: Internet :: WWW/HTTP',
+        'Private :: Do Not Upload'
     ]
 )
