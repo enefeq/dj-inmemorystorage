@@ -1,6 +1,7 @@
 # -*- coding: utf-8 -*-
 
 from setuptools import setup
+from io import open
 
 requires = ['Django >= 1.4', 'six>=1.4.1']
 tests_require = requires
