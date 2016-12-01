@@ -1,7 +1,6 @@
 # -*- coding: utf-8 -*-
 
 from setuptools import setup
-from io import open
 
 requires = ['Django >= 1.4', 'six>=1.4.1']
 tests_require = requires
@@ -11,7 +10,6 @@ setup(
     description="A non-persistent in-memory data storage backend for Django.",
     version="1.4.1",
     url="https://github.com/waveaccounting/dj-inmemorystorage",
-    license=open('LICENSE', encoding='utf-8').read(),
     long_description=open('README.rst', encoding='utf-8').read(),
     author='Cody Soyland, Seán Hayes, Tore Birkeland, Nick Presta',
     author_email='opensource@waveapps.com',
