@@ -2,10 +2,11 @@ language: python
 python:
   - "2.7"
   - "3.6"
-matrix:
-    - DJANGO=">=1.9,<1.10"
-    - DJANGO=">=1.10,<1.11"
-    - DJANGO=">=1.11,<2.0"
+env:
+  matrix:
+      - DJANGO=">=1.9,<1.10"
+      - DJANGO=">=1.10,<1.11"
+      - DJANGO=">=1.11,<2.0"
 # command to install dependencies
 install:
   - pip install -I -q Django$DJANGO
