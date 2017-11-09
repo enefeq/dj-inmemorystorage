@@ -1,30 +1,14 @@
 language: python
 python:
-  - "2.6"
   - "2.7"
-  - "3.2"
-  - "3.3"
-  - "3.4"
-env:
-  - DJANGO_VERSION=">=1.4.0,<1.5.0"
-  - DJANGO_VERSION=">=1.5.0,<1.6.0"
-  - DJANGO_VERSION=">=1.6.0,<1.7.0"
-  - DJANGO_VERSION=">=1.7.0,<1.8.0"
-  - DJANGO_VERSION=">=1.8.0,<1.9.0"
-  - DJANGO_VERSION=">=1.9.0,<1.10.0"
+  - "3.6"
 matrix:
-  exclude:
-    - python: "3.2"
-      env: DJANGO_VERSION=">=1.4.0,<1.5.0"
-    - python: "3.3"
-      env: DJANGO_VERSION=">=1.4.0,<1.5.0"
-    - python: "3.4"
-      env: DJANGO_VERSION=">=1.4.0,<1.5.0"
-    - python: "2.6"
-      env: DJANGO_VERSION=">=1.7.0,<1.8.0"
+    - DJANGO=">=1.9,<1.10"
+    - DJANGO=">=1.10,<1.11"
+    - DJANGO=">=1.11,<2.0"
 # command to install dependencies
 install:
-  - pip install -I -q Django$DJANGO_VERSION
+  - pip install -I -q Django$DJANGO
   - python setup.py install
 # command to run tests
 script:
